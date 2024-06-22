@@ -1,0 +1,25 @@
+.pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    button {
+        margin: auto;
+        border: none;
+        outline: none;
+        background-color: #F5F5F5;
+        width: 26px;
+        height: 24px;
+        color: #404B52;
+        border: 1px #EEEEEE solid;
+        border-radius: 4px;
+    }
+    .active {
+        background-color: #5932EA;
+        width: 26px;
+        height: 24px;
+        color: #FFFFFF;
+        border: 1px #5932EA solid;
+        border-radius: 4px;
+    }
+}

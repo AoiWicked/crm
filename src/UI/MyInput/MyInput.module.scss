@@ -1,0 +1,26 @@
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 216px;
+    height: 38px;
+    padding: 0px 8px 0px 8px;
+    background-color: #F9FBFF;
+    input {
+        padding-left: 8px;
+        height: 18px;
+        width: 100%;
+        border: none;
+        outline: none;
+        color: #B5B7C0;
+        background-color: #F9FBFF;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 700px) {
+    .input {
+        margin-top: 10px;
+     }
+    
+}

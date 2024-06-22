@@ -1,0 +1,80 @@
+.dash {
+    display: grid;
+    grid-template-rows: 75px 1fr 118px;
+    justify-content: center;
+    align-content: center;
+    width: 306px;
+    height: 100vh;    
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    padding-left: 37px;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 217px;
+        height: 39px;
+        margin-top: 36px;
+        p {
+            font-size: 10px;
+            margin-top: 11px;
+        }
+    }
+    &__name {
+        width: 195px;
+        height: 39px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        h1 { 
+            font-size: 26px;
+            font-weight: bold;
+        }
+        img {
+            width: 37px;
+            height: 37px;
+        }
+    }
+    &__nav {
+        margin-top: 24px;
+    }
+    &__footer { 
+        align-self: start;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        width: 250px;
+        justify-content: start;
+        margin-left: 26px;
+    }
+    &__manager {
+        display: flex;
+        flex-direction: column;
+        height: 39px;
+        justify-content: space-between;
+    }
+}
+
+.show {
+    display: none;
+}
+
+.hide { 
+    display: grid;
+}
+
+@media (max-width: 1350px) {
+    .dash {
+        position: fixed;
+        height: 100%;
+        padding-left: 10px;
+        top: 0;
+        left: 0;       
+        &__footer { 
+            margin-left: 10px;
+        }
+    }
+}
